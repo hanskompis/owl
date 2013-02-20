@@ -38,7 +38,7 @@ RDF on kuin kieli jolla ilmaistaan asioita kun taas OWL on sanasto, jonka avulla
 XML-dokumentissa tulee määritellä nimiavaruudet (namespace). Nimiavaruuksien avulla voidaan ratkaista mm. samannimisten elementtien aiheuttamia tulkintaongelmia sekä kertoa lukijalle (koneelle tai ihmiselle) konteksti, jonka mukaan elementtien kahvoja tulee tulkita. OWL-ontologiassa nimiavaruudet määritellään rdf:RDF -kahvojen sisään. Alla olevassa esimerkissä on eräs mahdollinen nimiavaruusmäärittely \cite{BHL01}. 
 \begin{verbatim}
 <rdf:RDF 
-    xmlns ="http://www.w3.org/TR/2004/REC-owl-guide-20040210/wine#" 
+    xmlns     ="http://www.w3.org/TR/2004/REC-owl-guide-20040210/wine#" 
     xmlns:vin ="http://www.w3.org/TR/2004/REC-owl-guide-20040210/wine#"       
     xml:base  ="http://www.w3.org/TR/2004/REC-owl-guide-20040210/wine#"       
     xmlns:food="http://www.w3.org/TR/2004/REC-owl-guide-20040210/food#"    

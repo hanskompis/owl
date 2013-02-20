@@ -24,21 +24,21 @@ huhhahhei ja sahtia kaivoon
 \section{Semanttinen web}
 Suurin osa tämän päivän webin sisällöstä on tarkoitettu ihmisten luettavaksi sekä tulkittavaksi. Kone pystyy tulkitsemaan esim. html-tiedoston ja esittämään tietoja siinä määritellyllä tavalla. Ongelma on, että kone ei \textit{ymmärrä} dokumentin sisällön merkitystä, semantiikkaa \cite{BHL01}.
 
-Se, että kone ei ymmärrä dokumenttien semanttisia merkityksiä rajoittaa esimerkiksi haut internetissä olevista dokumenteista yksinkertaiseksi hakusanojen etsimiseksi. Sen sijaan jos hakukoneet ymmärtäisivät asioiden merkityksen ja niiden välillä vallitsevat yhteydet, olisi hakukoneiden hakutulokset tarkempia ja sisältäisivät mahdollisesti laajennettuja tietoja haetun asian ympäriltä \cite{BHL01}. 
+Se, että kone ei ymmärrä dokumenttien semanttisia merkityksiä, rajoittuvat esimerkiksi haut internetissä olevista dokumenteista yksinkertaiseksi hakusanojen etsimiseksi. Sen sijaan jos hakukoneet ymmärtäisivät asioiden merkityksen ja niiden välillä vallitsevat yhteydet, olisi hakukoneiden hakutulokset tarkempia ja sisältäisivät mahdollisesti laajennettuja tietoja haetun asian ympäriltä \cite{BHL01}. 
 
 Tapa, jolla ilmaistaan asioiden ominaisuuksia webissä on tripla. Triplassä on subjekti, predikaatti ja objekti, joilla voidaan ilmaista asiayhteyksiä kuten 'hauki(subjekti) on(predikaatti) kala(objekti)'. Triploja voidaan ilmaista XML (Extensive Markup Language)-kieleen perustuvalla RDF(Resource Description Framework)-kielellä. Triploilla ilmaistuista datasta muodostuu varkkotietokanta, josta hakuja tekemällä voidaan löytää asioiden syy-yhteyksiä. Tämä verkkotietokanta ei sinällään ole vielä riittävä, koska siinä on ainoastaan talletettuna tietoa asioiden välisistä yhteyksistä, ei merkityksiä. RDF-triploilla ei ole mahdollista tallettaa semantiikoita \cite{BHL01}. 
 
 Semantiikkaa voidaan webissä ilmaista ontologioilla. Tietojenkäsittelytieteessä ontologialla tarkoitetaan dokumenttia, jossa kerrrotaan asioiden välisistä yhteyksistä \cite{BHL01}. 
-Yleinen tapa ilmaista ontologioita on OWL(Web Ontology Language)-ontologiat. OWL-ontologioissa määritellään sovellusalueen luokkia, ominaisuuksia, luokkien ilmentymiä sekä instanssien välisiä suhteita \cite{SWM04}. Eräs tapa hahmottaa RDF-triplojen ja OWL-ontologioiden välinen ero on verrata niitä perinteiseen relaatiotietokantaan. RDF-triplat on tapa tallettaa tietoa samalla tavalla kuin relaatiotietokannan riveillä. Jokaista riviä yksilöi yksilöivä avain kun taas RDF-triploissa yksilöinnin takee URI(Uniform Resource Identifier). Vastaavasti asioiden välisiä suhteita kuvataan OWL-ontologioilla samalla tavalla kuin relaatiotietokannan tauluissa suhteita ilmaistaan taulurakenteilla ja viitteillä tauluista toiseen. 
+Yleinen tapa ilmaista ontologioita on OWL(Web Ontology Language)-ontologiat. OWL-ontologioissa määritetään domainin luokat, edellisten ilmentymät eli yksilöt, määritellään luokkien välisiä suhteita ja annetaan ilmentymien ominaisuuksille arvoja. 
 
-RDF on kuin kieli jolla ilmaistaan asioita kun taas OWL on sanasto, jonka avulla merkitykset ymmärretään. 
+analogia relaatiotietokanta vs. RDF/OWL
 \section{OWL}
 \subsection{Ontologian rakenne}
 \subsubsection{Nimiavaruudet}
 XML-dokumentissa tulee määritellä nimiavaruudet (namespace). Nimiavaruuksien avulla voidaan ratkaista mm. samannimisten elementtien aiheuttamia tulkintaongelmia sekä kertoa lukijalle (koneelle tai ihmiselle) konteksti, jonka mukaan elementtien kahvoja tulee tulkita. OWL-ontologiassa nimiavaruudet määritellään rdf:RDF -kahvojen sisään. Alla olevassa esimerkissä on eräs mahdollinen nimiavaruusmäärittely \cite{BHL01}. 
 \begin{verbatim}
 <rdf:RDF 
-    xmlns ="http://www.w3.org/TR/2004/REC-owl-guide-20040210/wine#" 
+    xmlns     ="http://www.w3.org/TR/2004/REC-owl-guide-20040210/wine#" 
     xmlns:vin ="http://www.w3.org/TR/2004/REC-owl-guide-20040210/wine#"       
     xml:base  ="http://www.w3.org/TR/2004/REC-owl-guide-20040210/wine#"       
     xmlns:food="http://www.w3.org/TR/2004/REC-owl-guide-20040210/food#"    

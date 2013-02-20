@@ -1,0 +1,13 @@
+\begin{thebibliography}{1}
+
+\bibitem{BHL01}
+Tim Berners-Lee, James Hendler, and Ora Lassila.
+\newblock The semantic web.
+\newblock {\em Scientific American}, 284(5):34--43, 2001.
+
+\bibitem{SWM04}
+Michael~K Smith, Chris Welty, and Deborah~L McGuinness.
+\newblock Owl web ontology language guide.
+\newblock {\em W3C Recommendation}, 10(February):1--46, 2004.
+
+\end{thebibliography}
