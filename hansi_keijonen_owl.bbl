@@ -1,9 +1,19 @@
 \begin{thebibliography}{1}
 
+\bibitem{AH09}
+Grigoris Antoniou and Frank~Van Harmelen.
+\newblock Web ontology language: Owl.
+\newblock {\em Handbook on ontologies}, 2(September):91--110, 2009.
+
 \bibitem{BHL01}
 Tim Berners-Lee, James Hendler, and Ora Lassila.
 \newblock The semantic web.
 \newblock {\em Scientific American}, 284(5):34--43, 2001.
+
+\bibitem{MH04}
+Deborah~L McGuinness and Frank Van~Harmelen.
+\newblock Owl web ontology language overview.
+\newblock {\em W3C recommendation}, 10(February):1--22, 2004.
 
 \bibitem{SWM04}
 Michael~K Smith, Chris Welty, and Deborah~L McGuinness.

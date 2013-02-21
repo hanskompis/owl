@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.22)  19 FEB 2013 16:45
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.22)  20 FEB 2013 15:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -705,70 +705,75 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 18.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 39.
- (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 48.
+ (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [4]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 76.
+
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Overfull \hbox (6.74898pt too wide) in paragraph at lines 49--49
+Overfull \hbox (6.74898pt too wide) in paragraph at lines 86--86
 []    \T1/lmtt/m/n/10 xmlns ="http://www.w3.org/TR/2004/REC-owl-guide-20040210/
 wine#"[] 
  []
 
 
-Overfull \hbox (27.74892pt too wide) in paragraph at lines 49--49
+Overfull \hbox (27.74892pt too wide) in paragraph at lines 86--86
 []    \T1/lmtt/m/n/10 xmlns:vin ="http://www.w3.org/TR/2004/REC-owl-guide-20040
 210/wine#"[] 
  []
 
 
-Overfull \hbox (27.74892pt too wide) in paragraph at lines 49--49
+Overfull \hbox (27.74892pt too wide) in paragraph at lines 86--86
 []    \T1/lmtt/m/n/10 xml:base  ="http://www.w3.org/TR/2004/REC-owl-guide-20040
 210/wine#"[] 
  []
 
-[3]
-Overfull \hbox (27.74892pt too wide) in paragraph at lines 49--49
+
+Overfull \hbox (27.74892pt too wide) in paragraph at lines 86--86
 []    \T1/lmtt/m/n/10 xmlns:food="http://www.w3.org/TR/2004/REC-owl-guide-20040
 210/food#"[] 
  []
 
 
-Overfull \hbox (0.3329pt too wide) in paragraph at lines 50--51
+Overfull \hbox (0.3329pt too wide) in paragraph at lines 87--88
 \T1/lmr/m/n/10 Esimerkin ni-mia-va-ruus-m‰‰-rit-te-lyis-s‰ on m‰‰-ri-tel-ty ole
 -tus-ni-mia-va-ruus niil-le kah-
  []
 
 (./hansi_keijonen_owl.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 54.
- [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 54.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 91.
+ [5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 91.
  (./hansi_keijonen_owl.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 54.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 54.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 91.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 91.
 Package rerunfilecheck Info: File `hansi_keijonen_owl.out' has not changed.
-(rerunfilecheck)             Checksum: 07D3142849D1C27CFEF0080776DF59D4;227.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 54.
+(rerunfilecheck)             Checksum: 9C93FF8868D17043ED0A6897A92BD471;385.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 91.
  ) 
 Here is how much of TeX's memory you used:
- 6302 strings out of 493481
- 90857 string characters out of 3143393
- 169013 words of memory out of 3000000
- 9516 multiletter control sequences out of 15000+200000
- 46997 words of font info for 36 fonts, out of 3000000 for 9000
+ 6342 strings out of 493481
+ 91749 string characters out of 3143393
+ 170067 words of memory out of 3000000
+ 9547 multiletter control sequences out of 15000+200000
+ 47362 words of font info for 37 fonts, out of 3000000 for 9000
  965 hyphenation exceptions out of 8191
- 29i,6n,28p,786b,438s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/
-public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/s
-hare/texmf/fonts/type1/public/lm/lmbx9.pfb></usr/share/texmf/fonts/type1/public
-/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/tex
-mf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9
-.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmtt10.pfb>
-Output written on hansi_keijonen_owl.pdf (4 pages, 223200 bytes).
+ 29i,6n,28p,941b,349s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/shar
+e/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/l
+m/lmbx9.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf
+/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.
+pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
+Output written on hansi_keijonen_owl.pdf (5 pages, 233018 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
- 74 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 115 PDF objects out of 1000 (max. 8388607)
+ 98 compressed objects within 1 object stream
+ 17 named destinations out of 1000 (max. 500000)
+ 49 words of extra memory for PDF output out of 10000 (max. 10000000)
 

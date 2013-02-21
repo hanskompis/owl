@@ -22,23 +22,51 @@ huhhahhei ja sahtia kaivoon
 \end{abstract}
 \newpage
 \section{Semanttinen web}
-Suurin osa tämän päivän webin sisällöstä on tarkoitettu ihmisten luettavaksi sekä tulkittavaksi. Kone pystyy tulkitsemaan esim. html-tiedoston ja esittämään tietoja siinä määritellyllä tavalla. Ongelma on, että kone ei \textit{ymmärrä} dokumentin sisällön merkitystä, semantiikkaa \cite{BHL01}.
+Suurin osa tämän päivän webin sisällöstä on tarkoitettu ihmisten luettavaksi sekä tulkittavaksi. Kone pystyy tulkitsemaan esim. html-tiedoston ja esittämään tietoja tiedostossa määritellyllä tavalla. Ongelma on, että kone ei \textit{ymmärrä} dokumentin sisällön merkitystä, semantiikkaa \cite{BHL01}.
 
-Se, että kone ei ymmärrä dokumenttien semanttisia merkityksiä, rajoittuvat esimerkiksi haut internetissä olevista dokumenteista yksinkertaiseksi hakusanojen etsimiseksi. Sen sijaan jos hakukoneet ymmärtäisivät asioiden merkityksen ja niiden välillä vallitsevat yhteydet, olisi hakukoneiden hakutulokset tarkempia ja sisältäisivät mahdollisesti laajennettuja tietoja haetun asian ympäriltä \cite{BHL01}. 
+Se, että kone ei ymmärrä dokumenttien semanttisia merkityksiä rajoittaa esimerkiksi haut internetissä olevista dokumenteista yksinkertaiseksi hakusanojen etsimiseksi. Sen sijaan jos hakukoneet ymmärtäisivät asioiden merkityksen ja niiden välillä vallitsevat yhteydet, olisi hakukoneiden hakutulokset tarkempia ja sisältäisivät mahdollisesti laajennettuja tietoja haetun asian ympäriltä \cite{BHL01}. 
 
-Tapa, jolla ilmaistaan asioiden ominaisuuksia webissä on tripla. Triplassä on subjekti, predikaatti ja objekti, joilla voidaan ilmaista asiayhteyksiä kuten 'hauki(subjekti) on(predikaatti) kala(objekti)'. Triploja voidaan ilmaista XML (Extensive Markup Language)-kieleen perustuvalla RDF(Resource Description Framework)-kielellä. Triploilla ilmaistuista datasta muodostuu varkkotietokanta, josta hakuja tekemällä voidaan löytää asioiden syy-yhteyksiä. Tämä verkkotietokanta ei sinällään ole vielä riittävä, koska siinä on ainoastaan talletettuna tietoa asioiden välisistä yhteyksistä, ei merkityksiä. RDF-triploilla ei ole mahdollista tallettaa semantiikoita \cite{BHL01}. 
+Tapa, jolla ilmaistaan asioiden ominaisuuksia webissä on tripla. Triplassä on subjekti, predikaatti ja objekti, joilla voidaan ilmaista asiayhteyksiä kuten 'hauki(subjekti) on(predikaatti) kala(objekti)'. Triploja voidaan ilmaista XML (Extensive Markup Language)-kieleen perustuvalla RDF(Resource Description Framework)-kielellä. Triploilla ilmaistuista datasta muodostuu varkkotietokanta, josta hakuja tekemällä voidaan hakea tietoa monipuolisilla tavoilla. Tämä verkkotietokanta ei sinällään ole vielä riittävä, koska siinä on ainoastaan talletettuna tietoa asioiden välisistä yhteyksistä, ei merkityksiä. RDF-triploilla ei ole mahdollista tallettaa semantiikoita \cite{BHL01}. 
 
 Semantiikkaa voidaan webissä ilmaista ontologioilla. Tietojenkäsittelytieteessä ontologialla tarkoitetaan dokumenttia, jossa kerrrotaan asioiden välisistä yhteyksistä \cite{BHL01}. 
-Yleinen tapa ilmaista ontologioita on OWL(Web Ontology Language)-ontologiat. OWL-ontologioissa määritetään domainin luokat, edellisten ilmentymät eli yksilöt, määritellään luokkien välisiä suhteita ja annetaan ilmentymien ominaisuuksille arvoja. 
+Yleinen tapa ilmaista ontologioita on OWL(Web Ontology Language)-ontologiat. OWL-ontologioissa määritellään sovellusalueen luokkia, ominaisuuksia, luokkien ilmentymiä eli instansseja  sekä instanssien välisiä suhteita \cite{SWM04}. Ontologoiden pohjalta on mahdollista päätellä implisiittisiä asioiden ilmentymien välisiä suhteita. Eräs tapa hahmottaa RDF-triplojen ja OWL-ontologioiden välinen ero on verrata niitä perinteiseen relaatiotietokantaan. RDF-triplat on tapa tallettaa tietoa samalla tavalla kuin relaatiotietokannan riveillä tallennetaan rakenteista tietoa. Jokaista riviä yksilöi yksilöivä avain kun taas RDF-triploissa yksilöinnin takee URI(Uniform Resource Identifier). Vastaavasti asioiden välisiä suhteita kuvataan OWL-ontologioilla samalla tavalla kuin relaatiotietokannan tauluissa suhteita ilmaistaan taulurakenteilla ja viitteillä tauluista toiseen. 
 
-analogia relaatiotietokanta vs. RDF/OWL
+RDF on kuin kieli jolla ilmaistaan asioita kun taas OWL on sanasto, jonka avulla merkitykset ymmärretään. 
+
+teknologiastäkki?
+
+kuva ja selitys triploista ja URI:sta? Kyllä, tähän se sopisi kokoavana elementtinä.
+
+
 \section{OWL}
-\subsection{Ontologian rakenne}
+
+mitä owl tarjoaa? syntaksi, semantiikka, tuki päättelylle, ilmaisuvoimaa, käytettävyyttä
+Description Logics
+\subsection{RDF:n ja RDF Scheman rajoitukset}
+RDF/RDFS:ssä on toteutettu luokka (class) ja sen aliluokka (subclass), suhde (property) ja siitä periytynyt alisuhde (subproperty), suhteen sovellusalue ja arvorajoitukset sekä luokkien ilmentymien väliset suhteet[wolowl]. Mutta useita tarpeellisia ominaisuuksia puuttuu, jotka on toteutettu OWL:ssä, esimerkiksi [wolowl]:
+\begin{itemize}
+ \item \textit{Rajoitukset suhteen kohteessa}: (WTF?) RDFS:ssä voidaan määritellä rajoituksia, mitä arvoja tai muita luokkia suhteen objektiksi voidaan asettaa. Kuitenkaan ei ole mahdollista määrätä rajoitteita sen suhteen, onko jotkut rajoitteet voimassa vain rajatulle joukolle luokkia. 
+ \item \textit{Luokkien poissulkevuus}: joissain tapauksissa on hyvä pystyä sanomaan, että joku luokka on poissulkeva toisen luokan suhteen. Voidaan sanoa esimerkiksi että luokka 'mies' on poissulkeva suhteessa luokkaan 'nainen'
+ \item \textit{Luokkien joukko-operaatiot}: toisinaan on tarve muodostaa uusia luokkia olemassaolevien joukkojen perusteella. Esimerkiksi luokka 'henkilö' voitaisiin määritellä luokkien 'mies' ja 'nainen' yhdisteeksi kuitenkin niin, että henkilö voi olla vain joko mies tai nainen (poissulkevuus).
+ \item \textit{Suhteiden kardinaliteetit}: joihinkin suhteisiin on hyvä määrittää rajoituksia sen suhteen kuinka monta arvoa arvoksi voi antaa. Esimerkiksi ihmisellä voi olla ainoastaan kaksi vanhempaa.
+ \item \textit{Suhteiden erikoisominaisuudet}: suhteet voidaan määritellä \textit{transitiivisiksi, uniikeiksi} jonkun toisen suhteen \textit{inversioksi}. 
+\end{itemize}
+Tarvitaan siis kieli, joka on rikkaampi kuin RDF Schema[wolowl]. OWL:n suunnittelussa on jouduttu tasapainoilemaan kielen ilmaisuvoiman ja sen soveltuvuudesta koneelliseen päättelyyn. Mitä rikkaampi ja ilmaisuvoimaisempi kieli on, sitä hankalampi ja tehottomampi sen pohjalta on päätellä asioita. Pahimmassa tapauksessa päättely muodostuu mahdottomaksi tehtäväksi[owlwol].   
+
+Ideaalisesti OWL on RDF:n ja RDF Scheman laajennos[wolowl]. OWL käyttää RDF:n luokkia ja suhteita lisäten niihin omia laajennoksiaan kuten yllä on selitetty. RDF Schemassa on joitain hyvin vahvoja primitiivejä, kuten rfd:Class (kaikkien luokkien yliluokka) sekä rdf:Property (kaikkien suhteiden yliluokka). Näiden primitiivien ilmaisuvoima yhdistettynä yllä luetelluilla laajennoksilla on ristiriidassa sen tavoitteen kanssa, että ontologiat olisivat koneellisesti pääteltävissä. Tämä tasapainotila mielessäpitäen on määritelty kolme OWL:n alikieltä sen perusteella, painotetaanko ilmaisuvoimaa vai koneellista päättelyä[wolowl].  
+
+\subsection{OWL:n kolme alikieltä}
+
+
+
+\subsection{OWL-ontologian rakenne}
+
+
 \subsubsection{Nimiavaruudet}
 XML-dokumentissa tulee määritellä nimiavaruudet (namespace). Nimiavaruuksien avulla voidaan ratkaista mm. samannimisten elementtien aiheuttamia tulkintaongelmia sekä kertoa lukijalle (koneelle tai ihmiselle) konteksti, jonka mukaan elementtien kahvoja tulee tulkita. OWL-ontologiassa nimiavaruudet määritellään rdf:RDF -kahvojen sisään. Alla olevassa esimerkissä on eräs mahdollinen nimiavaruusmäärittely \cite{BHL01}. 
 \begin{verbatim}
 <rdf:RDF 
-    xmlns     ="http://www.w3.org/TR/2004/REC-owl-guide-20040210/wine#" 
+    xmlns ="http://www.w3.org/TR/2004/REC-owl-guide-20040210/wine#" 
     xmlns:vin ="http://www.w3.org/TR/2004/REC-owl-guide-20040210/wine#"       
     xml:base  ="http://www.w3.org/TR/2004/REC-owl-guide-20040210/wine#"       
     xmlns:food="http://www.w3.org/TR/2004/REC-owl-guide-20040210/food#"    
