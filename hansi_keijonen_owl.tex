@@ -22,15 +22,14 @@ huhhahhei ja sahtia kaivoon
 \end{abstract}
 \newpage
 \section{Semanttinen web}
-Suurin osa tämän päivän webin sisällöstä on tarkoitettu ihmisten luettavaksi sekä tulkittavaksi. Kone pystyy tulkitsemaan esim. html-tiedoston ja esittämään tietoja tiedostossa määritellyllä tavalla. Ongelma on, että kone ei \textit{ymmärrä} dokumentin sisällön merkitystä, semantiikkaa \cite{BHL01}.
-
-Se, että kone ei ymmärrä dokumenttien semanttisia merkityksiä rajoittaa esimerkiksi haut internetissä olevista dokumenteista yksinkertaiseksi hakusanojen etsimiseksi. Sen sijaan jos hakukoneet ymmärtäisivät asioiden merkityksen ja niiden välillä vallitsevat yhteydet, olisi hakukoneiden hakutulokset tarkempia ja sisältäisivät mahdollisesti laajennettuja tietoja haetun asian ympäriltä \cite{BHL01}. 
-
+Suurin osa tämän päivän webin sisällöstä on tarkoitettu ihmisten luettavaksi sekä tulkittavaksi. Kone pystyy tulkitsemaan esim. html-tiedoston ja esittämään dokumentin siinä määritellyllä tavalla. Ongelma on, että kone ei \textit{ymmärrä} dokumentin sisällön merkitystä, semantiikkaa \cite{BHL01}.Se, että kone ei ymmärrä dokumenttien semanttisia merkityksiä rajoittaa esimerkiksi haut internetissä olevista dokumenteista yksinkertaiseksi hakusanojen etsimiseksi. Sen sijaan jos hakukoneet ymmärtäisivät asioiden merkityksen ja niiden välillä vallitsevat yhteydet, olisi hakukoneiden hakutulokset tarkempia ja sisältäisivät mahdollisesti laajennettuja hakuja alkuperäisen asian ympäriltä \cite{BHL01}. On siis tarve olla menetelmä  käsitteiden luomiseen, käsitteiden ominaisuuksien kuvaamiseen sekä käsitteiden välisten suhteiden kuvaamiseen \cite{BHL01}. Tim Berners-Lee, James Hendler ja Ora Lassila toteavat artikkelissaan "Semantic web", että "semanttinen web ei ole erillinen web vaan laajennos tämänhetkiseen webiin, jossa informaatiolle on annettu hyvin muotoiltu merkitys mahdollistaen koneiden ja ihmisten paremman yhteistyön."  
+\section{Teknologiat ja kielet merkitysten ilmaisuun semanttisessa webissä}
+\subsection{Tiedon esittäminen RDF-triploilla}
 Tapa, jolla ilmaistaan asioiden ominaisuuksia webissä on tripla. Triplassä on subjekti, predikaatti ja objekti, joilla voidaan ilmaista asiayhteyksiä kuten 'hauki(subjekti) on(predikaatti) kala(objekti)'. Triploja voidaan ilmaista XML (Extensive Markup Language)-kieleen perustuvalla RDF(Resource Description Framework)-kielellä. ***identifiointi URI:lla*****Triploilla ilmaistuista datasta muodostuu varkkotietokanta, josta hakuja tekemällä voidaan hakea tietoa monipuolisilla tavoilla. Tämä verkkotietokanta ei sinällään ole vielä riittävä, koska siinä on ainoastaan talletettuna tietoa asioiden välisistä yhteyksistä, ei merkityksiä. RDF-triploilla ei ole mahdollista tallettaa semantiikoita \cite{BHL01}. 
-
+\subsection{Alkeelliset ontologiat RDF Schemalla}
 Semantiikkaa voidaan webissä ilmaista ontologioilla. Tietojenkäsittelytieteessä ontologialla tarkoitetaan dokumenttia, jossa kerrrotaan asioiden välisistä yhteyksistä \cite{BHL01}. 
 Yleinen tapa ilmaista ontologioita on OWL(Web Ontology Language)-ontologiat. OWL-ontologioissa määritellään sovellusalueen luokkia, ominaisuuksia, luokkien ilmentymiä eli instansseja  sekä instanssien välisiä suhteita \cite{SWM04}. Ontologoiden pohjalta on mahdollista päätellä implisiittisiä asioiden ilmentymien välisiä suhteita. Eräs tapa hahmottaa RDF-triplojen ja OWL-ontologioiden välinen ero on verrata niitä perinteiseen relaatiotietokantaan. RDF-triplat on tapa tallettaa tietoa samalla tavalla kuin relaatiotietokannan riveillä tallennetaan rakenteista tietoa. Jokaista riviä yksilöi yksilöivä avain kun taas RDF-triploissa yksilöinnin takee URI(Uniform Resource Identifier). Vastaavasti asioiden välisiä suhteita kuvataan OWL-ontologioilla samalla tavalla kuin relaatiotietokannan tauluissa suhteita ilmaistaan taulurakenteilla ja viitteillä tauluista toiseen. 
-
+\subsection{Kehittyneitä ontologioita OWL:llä}
 RDF on kuin kieli jolla ilmaistaan asioita kun taas OWL on sanasto, jonka avulla merkitykset ymmärretään. 
 
 teknologiastäkki?
@@ -38,7 +37,7 @@ teknologiastäkki?
 kuva ja selitys triploista ja URI:sta? Kyllä, tähän se sopisi kokoavana elementtinä.
 
 
-\section{OWL}
+\section{OWL Web Ontology Language}
 
 mitä owl tarjoaa? syntaksi, semantiikka, tuki päättelylle, ilmaisuvoimaa, käytettävyyttä
 Description Logics
@@ -65,11 +64,7 @@ W3C:n Web Ontology Working Group on määritellyt OWL:lle kolme alikieltä, joid
  \item \textit{OWL Lite}
 \end{itemize}
 
-
-
-
 \subsection{OWL-ontologian rakenne}
-
 
 \subsubsection{Nimiavaruudet}
 XML-dokumentissa tulee määritellä nimiavaruudet (namespace). Nimiavaruuksien avulla voidaan ratkaista mm. samannimisten elementtien aiheuttamia tulkintaongelmia sekä kertoa lukijalle (koneelle tai ihmiselle) konteksti, jonka mukaan elementtien kahvoja tulee tulkita. OWL-ontologiassa nimiavaruudet määritellään rdf:RDF -kahvojen sisään. Alla olevassa esimerkissä on eräs mahdollinen nimiavaruusmäärittely \cite{BHL01}. 
@@ -85,6 +80,7 @@ XML-dokumentissa tulee määritellä nimiavaruudet (namespace). Nimiavaruuksien 
     xmlns:xsd ="http://www.w3.org/2001/XMLSchema#">
 \end{verbatim}
 Esimerkin nimiavaruusmäärittelyissä on määritelty oletusnimiavaruus niille kahvoille, joissa ei käyteä mitään etuliitettä sekä nimiavaruudet niille kahvoille, joissa käytetään etuliitteitä vin: tai food:. Nimiavaruudet on määritelty myös owl:-, rdf:- ja rdfs:-etuliiteille kertomaan, että näillä etuliitteillä varustetut kahvat edustavat OWL:n, RDF:n ja RDFS:n termistöä. OWL-ontologia on riippuvainen myös XMLSchema-datatyypeistä, joten myös niiden nimiavaruus tulee määrittää. 
+\section{OWL2}
 
 \bibliographystyle{plain}
 \bibliography{lahteet}
